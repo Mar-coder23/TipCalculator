@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+/* Main Container styling */
+#mainContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/* Tip calculator styling */
+.tip-calculator-container{
+    height: 24em;
+    width: 38em;
+    background-color: white;
+    border-radius: 10px;
+    margin: 8em;
+}
+/* the title */
+.title-div{
+    font-size: 1.2em;
+    margin: 1em;
+    text-align: center;
+}
+/* the description */
+.tip-desc{
+    margin: 1em;
+}
+.bill-amount{
+    margin: 1em;
+    margin-bottom: 0em;
+}
+/* the inputs */
+#billAmount,
+#tipAmount{
+    width: 43.3em;
+    margin: .8em 0em;
+    height: 3em;
+    padding-left: 1em;
+    border-radius: 5px;
+    border: 1px solid rgb(167, 167, 167);
+}
+.tip-amount{
+    margin: 1em;
+    margin-bottom: .4em;
+    margin-top: 0em;
+}
+/* styling for the calculate button */
+#calculateBtn{
+    text-align: center;
+    margin-left: .1em;
+}
+#calculateBtn button{
+    padding: .6em 14.3em;
+    font-size: 1.1em;
+    background-color: rgb(28, 180, 28);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .1s;
+}
+#calculateBtn button:hover{
+    background-color: rgb(67, 207, 67);
+}
+#calculateBtn button:active{
+    background-color: rgb(28, 180, 28);
+
+}
+/* the output that shows the output when calculate is triggered */
+#totalOutput{
+    margin: 1em;
+    display: flex;
+    
+}
+#hiddenTotal{
+    padding-left: .8em;
+    font-size: 1.2em;
+}
+
+
+/* the hidden text, appears shown when either bill or tip input is not a valid number */
+#notNumber{
+    position: absolute;
+    top: 4em;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+#hiddenNotNumberMessage{
+    display: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator - Custom</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google font Roboto Source Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- the main section of the page -->
+    <section id="mainContainer">
+        <!-- the container of the tip calculator -->
+        <div class="tip-calculator-container">
+            <!-- the title Tip Calculator -->
+            <div class="title-div">
+                <h1>Tip Calculator</h1>
+            </div>
+            <!-- the description of the Tip Calculator -->
+            <div class="tip-desc">
+                <p>Enter the bill amount and tip percentage to calculate the total.</p>
+            </div>
+            <!-- the bill label and bill amount input -->
+            <div class="label-input-div">
+                <div class="bill-amount">
+                    <label for="billAmount">Bill amount:</label><br>
+                    <input type="number" id="billAmount">
+                </div>
+                 <!-- the tip label and tip amount input -->
+                <div class="tip-amount">
+                    <label for="tipAmount">Tip percentage:</label><br>
+                    <input type="number" id="tipAmount">
+                </div>
+            </div>
+            <!-- the calculate button -->
+            <div id="calculateBtn">
+                <button>Calculate</button>
+            </div>
+            <!-- the total and the output when a input is calculated  -->
+            <div id="totalOutput">
+                <p>Total:</p>
+                <p id="hiddenTotal"></p>
+            </div>
+        </div>
+    </section>
+    <!-- the section absolute to the parent section when it's not a number, to display a red text saying the following -->
+    <section id="notNumber">
+        <p id="hiddenNotNumberMessage"> Sorry, the provided input is not a number, Try again</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
